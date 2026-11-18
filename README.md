@@ -60,13 +60,30 @@ Some notes on the details:
 
 ## Install
 
+### Download a release
+
+Grab the prebuilt binary from the latest release and put it somewhere on your
+`PATH`:
+
+1. Open [**Releases → latest**](../../releases/latest).
+2. Download the archive for your platform (`virelz_<version>_windows_amd64.zip`,
+   or `.tar.gz` for Linux and macOS).
+3. Extract it and run `virelz` (or `virelz.exe` on Windows) from a terminal, or
+   double-click `virelz.exe` to get the interactive prompt.
+
+Nothing else needs to be installed; the release binary is self-contained.
+
+### Build from source
+
 You need Go 1.26 or newer.
 
 ```bash
 go build -o virelz.exe ./cmd/virelz
 ```
 
-That produces one self-contained binary with no runtime dependencies.
+That produces the same self-contained binary with no runtime dependencies.
+Replace the output name for other platforms, for example
+`go build -o virelz ./cmd/virelz`.
 
 ## Usage
 

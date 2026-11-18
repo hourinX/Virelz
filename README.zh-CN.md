@@ -42,13 +42,26 @@ Virelz 把这一串工作合成一步：
 
 ## 安装
 
+### 直接下载发布版
+
+从最新发布版下载预编译好的二进制，放到 `PATH` 里的任意目录即可：
+
+1. 打开 [**Releases → latest**](../../releases/latest)。
+2. 下载对应平台的压缩包（`virelz_<版本>_windows_amd64.zip`，Linux 和 macOS 为 `.tar.gz`）。
+3. 解压后在终端运行 `virelz`（Windows 上是 `virelz.exe`）；也可以直接双击 `virelz.exe` 进入交互模式。
+
+不需要装任何其他东西，发布版二进制是自包含的。
+
+### 从源码构建
+
 需要 Go 1.26 或更高版本。
 
 ```bash
 go build -o virelz.exe ./cmd/virelz
 ```
 
-产出一个自包含的二进制文件，无需其他运行时依赖。
+产出同样的自包含二进制，无需其他运行时依赖。其他平台改一下输出名即可，例如
+`go build -o virelz ./cmd/virelz`。
 
 ## 使用
 
