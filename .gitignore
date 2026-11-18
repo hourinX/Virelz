@@ -32,3 +32,11 @@ go.work.sum
 # Editor/IDE
 # .idea/
 # .vscode/
+
+# downloaded media
+*.mp4
+*.m4a
+*.part
+
+# local notes
+word.md
